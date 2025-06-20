@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWeather App</title>
+</head>
+<body>
+    <div class="weather-app">
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            id="search-form-input"
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-info">
+            <h1 class="weather-app-city" id="city">Johannesburg</h1>
+            <p id="date-time" class="date-time"></p>
+            <div id="weather-details">
+                <img id="weather-icon" src="" alt="Weather Icon" style="display:none;"/>
+                <p><strong>Temperature:</strong> <span id="temperature"></span>℃</p>
+                <p><strong>Condition:</strong> <span id="description"></span></p>
+                <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+                <p><strong>Wind speed:</strong> <span id="wind"></span> km/h</p>
+            </div>
+        </div>
+      </main>
+      <footer>
+        <p>
+            Coded by <a href="#" target="_blank">Thembile Maseko</a> on <a href="#" target="_blank">Github</a>
+            hosted on <a href="#" target="_blank">Netlify</a>
+        </p>
+      </footer>
+      <script src="script.js"></script>
+    </div>
+</body>
+</html>
